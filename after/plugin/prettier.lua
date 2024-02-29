@@ -1,0 +1,36 @@
+require("prettier").setup({
+    filetypes = {
+        "css",
+        "html",
+        "javascript",
+        "javascriptreact",
+        "json",
+        "markdown",
+        "typescript",
+        "typescriptreact",
+        "yaml",
+        "rust",
+        "c",
+        "cpp",
+        "zig"
+    },
+    cli_options = {
+        config_precedence = "cli-override",
+        arrow_parens = "always",
+        bracket_spacing = true,
+        bracket_same_line = false,
+        embedded_language_formatting = "auto",
+        end_of_line = "lf",
+        html_whitespace_sensitivity = "css",
+        -- jsx_bracket_same_line = false,
+        jsx_single_quote = false,
+        print_width = 80,
+        prose_wrap = "preserve",
+        quote_props = "as-needed",
+        semi = true,
+        single_attribute_per_line = true,
+        single_quote = false,
+        tab_width = 4,
+        trailing_comma = "es5",
+    }
+})
