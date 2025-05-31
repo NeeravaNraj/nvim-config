@@ -106,12 +106,20 @@ return require('packer').startup(function(use)
     use "rcarriga/nvim-dap-ui"
     use "theHamsta/nvim-dap-virtual-text"
     use "nvim-telescope/telescope-dap.nvim"
+    use "nvim-neotest/nvim-nio"
+    -- use({
+    --     "jackMort/ChatGPT.nvim",
+    --     requires = {
+    --         "MunifTanjim/nui.nvim",
+    --         "nvim-lua/plenary.nvim",
+    --         "nvim-telescope/telescope.nvim"
+    --     }
+    -- })
     use({
-        "jackMort/ChatGPT.nvim",
+        "kdheepak/lazygit.nvim",
+        -- optional for floating window border decoration
         requires = {
-            "MunifTanjim/nui.nvim",
             "nvim-lua/plenary.nvim",
-            "nvim-telescope/telescope.nvim"
-        }
+        },
     })
 end)

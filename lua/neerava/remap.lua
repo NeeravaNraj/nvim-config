@@ -20,6 +20,8 @@ if not directory then
 end
 vim.keymap.set("n", "<leader>vd", "<cmd>lua vim.diagnostic.open_float()<CR>")
 vim.keymap.set("n", "<leader>wd", "<cmd>Telescope diagnostics<CR>")
+vim.keymap.set("n", "<leader>pg", "<cmd>Telescope live_grep<CR>")
+vim.keymap.set("n", "<leader>mp", "<cmd>Telescope man_pages<CR>")
 vim.keymap.set("n", "<leader>f", "<cmd>Prettier<CR>")
 vim.keymap.set("n", "<leader>bd", "<cmd>bd<CR>")
 vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = open_nvim_tree })
@@ -105,4 +107,6 @@ vim.keymap.set("n", "<leader>bp", ":lua require 'dap'.toggle_breakpoint()<CR>")
 vim.keymap.set("n", "<leader>dr", ":lua require 'dap'.repl.open()<CR>")
 vim.keymap.set("n", "<leader>dl", ":lua require 'dap'.run_last()<CR>")
 vim.keymap.set("n", "<leader>B", ":lua require 'dap'.set_breakpoint(vim.fn.input('Breakpoint condition: '))<CR>")
-vim.keymap.set("n", "<leader>cg", ":ChatGPT<CR>")
+
+-- Go to's
+vim.keymap.set("n", "gr", vim.lsp.buf.references, { noremap = true, silent = true })
