@@ -1,1 +1,1 @@
-## My LazyVim config
+Neovim config using LazyVim and Tmux config.
