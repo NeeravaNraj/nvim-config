@@ -1,0 +1,4 @@
+WRN 2026-04-09T15:02:56.015 c/nvim.108491.0 socket_watcher_start:177: Failed to remove stale socket /run/user/1000/nvim.119639.0: no such file or directory
+WRN 2026-04-09T15:02:56.015 c/nvim.108491.0 server_start:197: Failed to start server: permission denied: /run/user/1000/
+WRN 2026-04-09T15:02:59.937 c/nvim.108491.0 socket_watcher_start:177: Failed to remove stale socket /run/user/1000/nvim.119717.0: no such file or directory
+WRN 2026-04-09T15:02:59.937 c/nvim.108491.0 server_start:197: Failed to start server: permission denied: /run/user/1000/
