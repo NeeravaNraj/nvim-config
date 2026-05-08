@@ -5,6 +5,7 @@
 local snacks = require("snacks")
 vim.keymap.set("n", "<C-t>", "<cmd>ToggleTerm<CR>", { desc = "Toggle Terminal" })
 vim.keymap.set("t", "<C-t>", "<cmd>ToggleTerm<CR>", { desc = "Toggle Terminal" })
+vim.keymap.set("i", "<C-c>", "<Esc>", { desc = "Exit insert mode (safe)" })
 
 vim.keymap.set("n", "<C-b>", function()
   snacks.explorer()
