@@ -19,9 +19,7 @@ vim.api.nvim_create_autocmd("VimEnter", {
 })
 
 vim.api.nvim_create_autocmd({ "InsertLeave", "TextChanged" }, {
-    callback = function()
-        if vim.bo.modified then
-            vim.cmd("silent write")
-        end
-    end,
+    pattern = { "*" },
+    command = "silent! wall",
+    nested = true,
 })
